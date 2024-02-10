@@ -266,13 +266,36 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-8">
             <div class="section-heading">
-              <h2>Budget Page<em>  </em></h2>
+              <h2>viewBudget Page<em>  </em></h2>
               <!-- <span>Etiam suscipit ante a odio consequat</span> -->
             </div>
           </div>
           <div class="col-md-8">
             <div class="contact-form">
+                         <table border="2">
+                  <tr>
+                    <td>Goal id</td>
+                    <td>User </td>
+                    <td>name</td>
+                    <td>target amount</td>
+                      <td>target date</td>
+                      <td>Description</td>
+                <td>Delete</td>
+                </tr>
+    {% for u in userdict %}
 
+    <tr>
+       <td>{{ u.goal_id }}</td>
+        <td>{{ u.user }}</td>
+        <td>{{ u.name }}</td>
+       <td>{{ u.target_amount }}</td>
+       <td>{{ u.target_date }}</td>
+        <td>{{ u.description }}</td>
+        <td> <a href="{% url 'goal_del' u.id %}">delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
             </div>
           </div>
         </div>

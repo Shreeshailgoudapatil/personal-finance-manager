@@ -17,15 +17,51 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
 
+from django.shortcuts import get_object_or_404
+
 from customer import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url("login", views.login, name="login"),
-    url("transaction", views.transaction, name="transaction"),
-    url("viewlogin", views.viewlogin, name="viewlogin"),
-    url("insertlogin", views.insertlogin, name="insertlogin"),
+
+    # url("login", views.insertlogin, name="login"),
+    # url("transaction", views.transaction, name="transaction"),
+    #url("insertlogin", views.insertlogin, name="insertlogin"),
     url("inserttransaction", views.inserttransaction, name="inserttransaction"),
+    url("insertbudget", views.insertbudget, name="insertbudget"),
+    url("insertcategory", views.insertcategory, name="insertcategory"),
+    url("insertgoal", views.insertgoal, name="insertgoal"),
+    url("^$",views.index,name="index"),
+
+
+    url("viewlogin", views.viewlogin, name="viewlogin"),
+    url("login_del/(?P<pk>\d+)/$", views.login_del, name="login_del"),
+
+    url("viewtransaction", views.viewtransaction, name="viewtransaction"),
+    url("transaction_del/(?P<pk>\d+)/$", views.transaction_del, name="transaction_del"),
+
+    url("viewbudget", views.viewbudget, name="viewbudget"),
+    url("budget_del/(?P<pk>\d+)/$", views.budget_del, name="budget_del"),
+
+
+    url("viewgoal", views.viewgoal, name="viewgoal"),
+    url("goal_del/(?P<pk>\d+)/$", views.goal_del, name="goal_del"),
+
+
+    url("viewcategory", views.viewcategory, name="viewcategory"),
+    url("category_del/(?P<pk>\d+)/$", views.category_del, name="category_del"),
+
+    url("logcheck", views.logcheck, name="logcheck"),
+    # url("newuser", views.newuser, name="newuser"),
+    url("insertnewuser", views.insertnewuser, name="insertnewuser"),
+
+    url("user_home", views.user_home, name="user_home"),
+    url("admin_home", views.admin_home, name="admin_home"),
+
+
+
+
+
 
 
 ]
