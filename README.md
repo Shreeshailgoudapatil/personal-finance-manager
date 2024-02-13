@@ -8,7 +8,7 @@
 ➢ Framework :Django<br>
 ➢ Browser :Any of Chrome, Opera, Mozilla Firefox<br>
 
-Hardware Requirements:
+Hardware Requirements:<br>
 ➢ Operating System Windows 7/ 8/10<br>
 ➢ RAM 4GB<br>
 ➢ Hard Disk min 40GB<br>
