@@ -1,19 +1,19 @@
 # PERSONAL FINANCE MANAGER PROJECT
 
-➢ Platform :Web Application
-➢ Operating system :Windows 7 and others
-➢ Database :My SQL
-➢ Front end :HTML, CSS
-➢ Language :Python
-➢ Framework :Django
-➢ Browser :Any of Chrome, Opera, Mozilla Firefox
+➢ Platform :Web Application<br>
+➢ Operating system :Windows 7 and others<br>
+➢ Database :My SQL<br>
+➢ Front end :HTML, CSS<br>
+➢ Language :Python<br>
+➢ Framework :Django<br>
+➢ Browser :Any of Chrome, Opera, Mozilla Firefox<br>
 
 Hardware Requirements:
-➢ Operating System Windows 7/ 8/10
-➢ RAM 4GB
-➢ Hard Disk min 40GB
-➢ Processor Core i3 or above
-➢ Computer System Type 64-bit computer
+➢ Operating System Windows 7/ 8/10<br>
+➢ RAM 4GB<br>
+➢ Hard Disk min 40GB<br>
+➢ Processor Core i3 or above<br>
+➢ Computer System Type 64-bit computer<br>
 
 Key features of the project include:
 
